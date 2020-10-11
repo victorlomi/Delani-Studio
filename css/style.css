@@ -1,3 +1,24 @@
+/* General */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.black-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.white-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 33px;
+}
+
 /* Header */
 .header {
     background-image: url("../images/header/background.jpg");
@@ -47,13 +68,21 @@
     padding-bottom: 40px;
 }
 
-.black-title {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
 .about-us p {
     line-height: 2.2;
 }
 
+/* Services */
+.services {
+    height: 340px;
+    padding-top: 90px;
+    padding-bottom: 85px;
+    text-align: center;
+    background-image: url("../images/services/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
+.services p {
+    color: #ffffff;
+}
