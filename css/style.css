@@ -1,0 +1,43 @@
+/* Header */
+.header {
+    background-image: url("../images/header/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 960px;
+}
+
+.straight-border {
+    border-radius: 0;
+}
+
+.header-logo {
+    margin-top: 235px;
+}
+
+/* Main title */
+.header-title h1 {
+    font-size: 55px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.top-title {
+    margin-top: 48px;
+}
+
+.bottom-title {
+    margin-top: 32px;
+}
+
+/* Subtitle */
+.header-title h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.scroll-button {
+    margin-top: 210px;
+}
+
+
