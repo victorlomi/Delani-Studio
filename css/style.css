@@ -42,7 +42,18 @@
 
 /* About us */
 .about-us {
-    
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.black-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about-us p {
+    line-height: 2.2;
 }
 
 
