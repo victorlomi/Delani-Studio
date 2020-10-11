@@ -86,3 +86,25 @@
 .services p {
     color: #ffffff;
 }
+
+/* What we do */
+.what-we-do {
+    padding-top: 45px;
+}
+
+.what-we-do h1 {
+    margin-bottom: 30px;
+}
+
+.what-we-do .groups {
+    width: 100%;
+}
+
+.what-we-do .group {
+    width: 400px;
+}
+
+.what-we-do p {
+    font-size: 19px;
+    text-transform: uppercase;
+}
