@@ -48,6 +48,7 @@ let isClicked = function(element) {
     return false;
 }
 
+// what we do section
 $(document).ready(function () {
     $(".design").click(function (e) { 
         if(isClicked("design")) {
@@ -73,3 +74,25 @@ $(document).ready(function () {
         }
     });
 });
+
+// Portfolio section
+$(document).ready(function () {
+    $(".image-text").each(function (index, element) {
+        $(element).hover(function () {
+            // make text overlay visible
+            $(element).children("p").css("display", "block");
+            
+            // darken image
+            $(element).children("img").addClass("darken-image");
+            }, function () {
+                // make text overlay invisible
+                $(element).children("p").css("display", "none");
+            
+                // lighten image
+                $(element).children("img").removeClass("darken-image");
+            }
+        );
+    });
+});
+
+
