@@ -128,3 +128,21 @@
     padding: 0 4px;
 }
 
+/* Portfolio */
+.portfolio {
+    margin-top: 65px;   
+    margin-bottom: 50px;
+}
+
+.portfolio h1 {
+    margin-bottom: 20px;
+}
+
+.portfolio img {
+    width: 300px;
+}
+
+.top-row {
+    margin-bottom: 45px;
+}
+
