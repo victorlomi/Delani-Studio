@@ -1,23 +1,75 @@
 // What we do text
 let designText = "Our design practice offers a full range of services including" +
                 "brand strategy, interaction and visual design and user" +
-                "experience testing. Throughout your project, our designers" + 
+                "experience testing. <br><br> Throughout your project, our designers" + 
                 "create and implement visual design and workflows, solicit" +
                 "user feedback and work with you to make sure what gets built" +
                 "is what is needed.";
 
 let developmentText = "All engineers are fluent in the latest enterprise," +
-                    "mobile and web development technologies. They" +
+                    "mobile and web development technologies.<br><br> They" +
                     "collaborate with your team to write, and improve code" +
                     "on a daily basis, using proven practices such as" + 
                     "test-driven development and pair programming.";
 
 let managementText = "Planning and development is iterative. Because" + 
                     "we are constantly coding and testing, the products" +  
-                    "we build are always ready to go live. This" + 
+                    "we build are always ready to go live.<br><br> This" + 
                     "iterative process allows for changes as"  + 
                     "business requirements evolve.";
 
-console.log(designText)
-console.log(developmentText)
-console.log(managementText)
+let showInfo = function(element, text) {
+    // This function returns a string describing the html structure that 
+    // will be previewed when the icon is clicked
+    return `<div class="preview">
+                <h1 class="preview-title">${element.toUpperCase()}</h1>
+                <p id="preview-text">${text}</p>
+            </div>` 
+};
+
+let showIcon = function(element) {
+    // This function returns a string describing the html structure 
+    // that is shown originally
+    if(element === "management") {
+        return `<img src="./images/what-we-do/${element}.png" alt="${element.toUpperCase()} Icon">
+            <p>product ${element}</p>`
+    }
+    return `<img src="./images/what-we-do/${element}.png" alt="${element.toUpperCase()} Icon">
+            <p>${element}</p>`
+}
+
+let isClicked = function(element) {
+    // This function returns the state of the what-we-do icons by 
+    // checking if they're displaying the elements added by 
+    // the showInfo function
+    if($(`.${element}`).children()[0].className === "preview") {
+        return true;
+    }
+    return false;
+}
+
+$(document).ready(function () {
+    $(".design").click(function (e) { 
+        if(isClicked("design")) {
+            $(".design").html(showIcon("design"));
+        } else {
+            $(".design").html(showInfo("design", designText));
+        }
+    });
+
+    $(".development").click(function (e) { 
+        if(isClicked("development")) {
+            $(".development").html(showIcon("development"));
+        } else {
+            $(".development").html(showInfo("development", developmentText));
+        }
+    });
+
+    $(".management").click(function (e) { 
+        if(isClicked("management")) {
+            $(".management").html(showIcon("management"));
+        } else {
+            $(".management").html(showInfo("product management", managementText));
+        }
+    });
+});
