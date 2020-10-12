@@ -135,7 +135,6 @@
 /* Portfolio */
 .portfolio {
     margin-top: 65px;   
-    margin-bottom: 50px;
     padding: 0 90px;
 }
 
@@ -173,4 +172,50 @@
 
 .darken-image {
     filter: brightness(0.3);
+}
+
+/* Contact us */
+.contact {
+    height: 430px;
+    background-image: url("../images/contact-us/background.jpg");
+    background-size: cover;
+}
+
+.contact-title {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 33px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 400px;
+    font-size: 13px;
+}
+
+#name {
+    margin-right: 30px;
+    margin-left: -70px;
+}
+
+#email {
+    margin-right: -70px;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+textarea {
+    margin-top: 24px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 13px;
+    color: white;
 }
