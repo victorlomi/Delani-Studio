@@ -219,3 +219,24 @@ textarea {
     font-size: 13px;
     color: white;
 }
+
+/* Social media */
+.social-media {
+    padding-top: 35px;
+    padding-bottom: 5px;
+}
+
+.social-media-images {
+    margin-bottom: 30px;
+}
+
+.social-media-logo {
+    margin: 0 8px;
+}
+
+.social-media-text {
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
