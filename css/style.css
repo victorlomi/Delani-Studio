@@ -224,6 +224,12 @@ textarea {
     color: white;
 }
 
+#subscribe-btn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
 /* Social media */
 .social-media {
     padding-top: 35px;
