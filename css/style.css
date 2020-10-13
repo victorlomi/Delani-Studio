@@ -179,13 +179,9 @@ body {
 }
 
 /* Contact us */
-.contact {
-    height: 430px;
-    background-image: url("../images/contact-us/background.jpg");
-    background-size: cover;
-}
-
 .contact-title {
+    display: flex;
+    justify-content: center;
     margin-top: 35px;
     margin-bottom: 20px;
     font-size: 33px;
@@ -194,7 +190,23 @@ body {
     text-transform: uppercase;
 }
 
+#mc_embed_signup .mc-field-group label {
+    display: none;
+}
+
+#mc_embed_signup .indicates-required {
+    display: none;
+}
+
 input[type="text"] {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 400px;
+    font-size: 13px;
+}
+
+input[type="email"] {
     background-color: transparent;
     border: 1px solid white;
     color: white;
@@ -216,18 +228,41 @@ input[type="text"] {
     opacity: 1; /* Firefox */
 }
 
+#mc-embedded-subscribe {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.clear {
+    display: flex;
+    justify-content: center;
+}
+
+#mc_embed_signup .mc-field-group input {
+    border: 1px solid #ffffff;
+    border-radius: 0;
+}
+
+form {
+    height: 430px;
+    background-image: url("../images/contact-us/background.jpg");
+    background-size: cover;
+}
+
 textarea {
-    margin-top: 24px;
     background-color: transparent;
     border: 1px solid white;
     font-size: 13px;
     color: white;
 }
 
-#subscribe-btn {
+#mc_embed_signup .button {
     background-color: transparent;
-    border: 1px solid #ffffff;
     color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    margin-top: 15px;
 }
 
 /* Social media */

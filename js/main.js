@@ -119,13 +119,13 @@ let showMessage = function() {
     alert(`** ${name} we have received your message. Thank you for reaching out to us. **`);
 };
 
-$(document).ready(function () {
-    $( "#message" ).focusout(function() {
-        if(checkName() && checkEmail()) {
-            if(confirm("Send your message?")) {
-                showMessage();
-            }
-        }
-    })
-});
+// $(document).ready(function () {
+//     $( "#message" ).focusout(function() {
+//         if(checkName() && checkEmail()) {
+//             if(confirm("Send your message?")) {
+//                 showMessage();
+//             }
+//         }
+//     })
+// });
 

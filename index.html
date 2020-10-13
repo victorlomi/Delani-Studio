@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delani Studio</title>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -101,18 +108,39 @@
             </div>
         </div>
 
-        <!-- Contact us section -->
-        <form class="contact d-flex flex-column align-items-center">
-            <h1 class="contact-title">Contact us</h1>
-            <div class="contact-first-row">
-                <input type="text" id="name" name="name" placeholder="Name...">
-                <input  type="text" id="email" name="email" placeholder="Email...">
-            </div>
-            <div class="contact-second-row">
-                <textarea name="message" id="message" cols="110" rows="10" placeholder="Your message here..."></textarea>
-            </div>
-            <a id="subscribe-btn" href="http://eepurl.com/hfWAbH" target="_blank">Subscribe</a>
-        </form>
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="https://gmail.us2.list-manage.com/subscribe/post?u=8501be2a5b9a216e825c47660&amp;id=c55c2db32d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <h1 class="contact-title">Contact us</h1>
+                <div id="mc_embed_signup_scroll">
+                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-5 mc-field-group">
+                            <label for="mce-FNAME">Name </label>
+                            <input type="text" value="" placeholder="Name..." name="FNAME" class="" id="mce-FNAME">
+                        </div>
+                        <div class="col-5 mc-field-group">
+                            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+                            <input type="email" value="" placeholder="Email..." name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                    </div>
+                    
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8501be2a5b9a216e825c47660_c55c2db32d" tabindex="-1" value=""></div>
+                    <div class="row d-flex justify-content-start contact-second-row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <textarea name="message" id="message" cols="110" rows="10" placeholder="Your message here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
 
         <!-- Social media footer -->
         <div class="social-media d-flex flex-column align-items-center">
