@@ -95,37 +95,3 @@ $(document).ready(function () {
     });
 });
 
-// Handle form
-let checkName = function() {
-    // This function returns true if the name input has not been changed
-    if($("#name").val() === '') {
-        return false;
-    } 
-    return true;
-    
-};
-
-let checkEmail = function () { 
-    // This function returns true if the email input has not been changed
-    if($("#email").val() === '') {
-        return false;
-    } 
-    return true;
-};
-
-let showMessage = function() {
-    let name = $("#name").val();
-    let email = $("#email").val();
-    alert(`** ${name} we have received your message. Thank you for reaching out to us. **`);
-};
-
-// $(document).ready(function () {
-//     $( "#message" ).focusout(function() {
-//         if(checkName() && checkEmail()) {
-//             if(confirm("Send your message?")) {
-//                 showMessage();
-//             }
-//         }
-//     })
-// });
-
